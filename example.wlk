@@ -1,6 +1,6 @@
 object pepita {
 	var energia = 100
-	
+
 	method comer(comida) {
 		energia = energia + comida.energiaQueAporta()
 	}
@@ -12,6 +12,7 @@ object pepita {
 	method energia() {
 		return energia
 	}
+
 }
 
 object alpiste {
@@ -43,8 +44,8 @@ object manzana {
 }
  object pepon {
 	var energia = 30
-
-	method energia() {
+	
+		method energia() {
 		return energia
 	}
 
@@ -60,9 +61,11 @@ object manzana {
 
  object roque {
 	var aveDeRoque = pepita
+	var cantDeCenas =0
 
 	method asignarAve (nuevaAve){
 	aveDeRoque = nuevaAve
+    cantDeCenas = 0
 	}
 
 	method aveQuePosee(){
@@ -71,5 +74,10 @@ object manzana {
 
 	method alimentarCon(comida){
 		aveDeRoque.comer(comida)
+		cantDeCenas = cantDeCenas + 1
+	}
+
+	method cenas() {
+		return cantDeCenas
 	}
  }
