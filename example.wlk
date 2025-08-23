@@ -68,4 +68,8 @@ object manzana {
 	method aveQuePosee(){
 		return aveDeRoque
 	}
+
+	method alimentarCon(comida){
+		aveDeRoque.comer(comida)
+	}
  }
