@@ -57,3 +57,15 @@ object manzana {
 	}
 
  }
+
+ object roque {
+	var aveDeRoque = pepita
+
+	method asignarAve (nuevaAve){
+	aveDeRoque = nuevaAve
+	}
+
+	method aveQuePosee(){
+		return aveDeRoque
+	}
+ }
